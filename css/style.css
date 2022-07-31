@@ -116,7 +116,6 @@ header {
 .hero {
     display: flex;
     justify-content: space-between;
-    background-color: #252420;
     height: 490px;
 }
 
@@ -260,8 +259,8 @@ header {
     margin-bottom: 42px;
 }
 
-.bonus-item p {
-    display: inline;
+span {
+    color: #ff7500;
 }
 
 .bonus-img img {
@@ -345,4 +344,103 @@ footer hr {
 
 .footer-text li a:focus {
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 512px) {
+    .header-hr {
+        margin-bottom: 0;
+    }
+    .logo-item img {
+        width: 159px;
+    }
+    .main-link {
+        font-size: 0.65rem;
+    }
+    .header-links {
+        display: none;
+    }
+    .hero-main {
+        height: 350px;
+    }
+    .hero-text {
+        margin-top: 40px;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 0%;
+    }
+    .hero-img img {
+        display: none;
+    }
+    .about {
+        margin-top: 50px;
+    }
+    .about h1 {
+        font-size: 2.4rem;
+    }
+    .about-icons {
+        flex-direction: column;
+    }
+    .icon-box {
+        width: 63px;
+        height: 63px;
+        margin-bottom: 10px;
+    }
+    .about-icons li {
+        margin-bottom: 15px;
+    }
+    .about-icons li h4 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .about-icons li p {
+        font-size: 1rem;
+    }
+    .bonus {
+        margin-top: 40px;
+        height: 400px;
+    }
+    .bonus-text {
+        padding: 15px;
+        margin-top: 10px;
+    }
+    .bonus-text h1 {
+        font-size: 2rem;
+    }
+    .bonus-text p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .bonus-text .main-link {
+        margin-top: 0%;
+    }
+    .bonus-img img {
+        display: none;
+    }
+    footer {
+        margin-top: 60px;
+    }
+    footer hr {
+        margin: 0%;
+    }
+    .icon-link li {
+        transform: scale(0.7);
+    }
+    .footer-texts {
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+    .footer-text {
+        width: 50%;
+    }
+    .footer-text li {
+        margin: 0%;
+    }
+    .footer-text a {
+        font-size: 0.85rem;
+    }
 }
